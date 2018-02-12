@@ -1,5 +1,5 @@
 # Expensify
-
+Expensify app
 
 ## Instructions
 Clone the repo
