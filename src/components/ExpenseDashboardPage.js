@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 
+import ExpenseListFilters from './ExpenseListFilters'
+import ExpenseList from './ExpenseList'
+
 class ExpenseDashboardPage extends Component {
   render() {
     return (
       <div>
-        This is from my dashboard component
+        <ExpenseListFilters />
+        <ExpenseList />
       </div>
     )
   }
