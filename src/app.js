@@ -14,10 +14,12 @@ import { addExpense } from './actions/expenses'
 import { setTextFilter } from './actions/filters'
 import getVisibleExpenses from './selectors/expenses'
 
-const store = configureStore();
+// const store = configureStore();
 
-const app = <Provider store={store}>
-                <AppRouter />
-            </Provider>;
+// const app = <Provider store={store}>
+//                 <AppRouter />
+//             </Provider>;
+
+const App = () => <p>Its working!!!</p>
 
 ReactDOM.render(app, document.getElementById('app'));
