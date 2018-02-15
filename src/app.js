@@ -22,4 +22,4 @@ import getVisibleExpenses from './selectors/expenses'
 
 const App = () => <p>Its working!!!</p>
 
-ReactDOM.render(app, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
