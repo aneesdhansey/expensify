@@ -22,4 +22,4 @@ const app = (
             </Provider>
 );
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<app />, document.getElementById('app'));
