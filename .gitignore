@@ -57,8 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
-.babelrc
-
 public/bundle.js
 public/bundle.js.map
 public/styles.css
