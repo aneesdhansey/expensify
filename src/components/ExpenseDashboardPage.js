@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import ExpenseListFilters from './ExpenseListFilters'
+import ExpensesSummary from './ExpensesSummary'
 import ExpenseList from './ExpenseList'
 
 class ExpenseDashboardPage extends Component {
@@ -8,6 +9,7 @@ class ExpenseDashboardPage extends Component {
     return (
       <div>
         <ExpenseListFilters />
+        <ExpensesSummary />
         <ExpenseList />
       </div>
     )
