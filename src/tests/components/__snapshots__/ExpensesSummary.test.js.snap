@@ -3,6 +3,8 @@
 exports[`should render ExpensesSummary correctly 1`] = `
 <p>
   Viewing 
+   
+  expenses
    totalling 
   $0.00
 </p>

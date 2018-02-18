@@ -5,16 +5,18 @@ import numeral from 'numeral'
 import selectExpenses from '../selectors/expenses'
 import selectExpensesTotal from '../selectors/expenses-total'
 
-export class ExpensesSummary extends Component {
 
-    render() {
-        return (
-            <p>
-                Viewing {this.props.expensesCount} totalling {numeral(this.props.expensesTotal / 100).format('$0,0.00')}
-            </p>
-        )
-    }
-}
+export const ExpensesSummary = ({ expensesCount, expensesTotal }) => {
+
+    const expText = expensesCount === 1 ? 'expense' : 'expenses';
+
+    return (
+        <p>
+            Viewing {expensesCount} {expText} totalling {numeral(expensesTotal / 100).format('$0,0.00')}
+        </p>
+    )
+
+};
 
 const mapStateToProps = (state) => {
 
