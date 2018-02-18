@@ -14,14 +14,20 @@ Run the Webpack Dev Server
 ```
 npm run dev-server
 ```
-Build the project (Not suitable for production, its a development build)
+Run the tests
 ```
-npm run build
+npm run test
+```
+
+Production Build
+```
+npm run build:prod
 ```
 ## Built With
 * [React](https://reactjs.org/) - For the UI
 * [Webpack](https://webpack.js.org/) - For bundling
 * [SCSS](https://sass-lang.com/) - For Styling
+* [Jest](https://facebook.github.io/jest/) and [Enzyme](https://github.com/airbnb/enzyme) - For testing
 
 ## Acknowledgments
 [Andrew Mead](https://github.com/andrewjmead)'s Udemy Course titled **The Complete React Web Developer Course(with Redux)**
