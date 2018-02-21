@@ -8,8 +8,8 @@ class ExpenseDashboardPage extends Component {
   render() {
     return (
       <div>
-        <ExpenseListFilters />
         <ExpensesSummary />
+        <ExpenseListFilters />
         <ExpenseList />
       </div>
     )
