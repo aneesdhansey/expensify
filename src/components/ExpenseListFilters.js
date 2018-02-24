@@ -59,6 +59,7 @@ export class ExpenseListFilters extends Component {
                         <DateRangePicker
                             startDate={this.props.filters.startDate}
                             startDateId="start"
+                            calendarInfoPosition="bottom"
                             endDate={this.props.filters.endDate}
                             endDateId="end"
                             onDatesChange={this.onDatesChange}

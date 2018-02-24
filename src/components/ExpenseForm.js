@@ -82,6 +82,7 @@ export default class ExpenseForm extends Component {
                     onChange={this.onAmountChange} />
                 <SingleDatePicker
                     date={this.state.createdAt}
+                    calendarInfoPosition="bottom"
                     onDateChange={this.onDateChange}
                     focused={this.state.calendarFocused}
                     onFocusChange={this.onFocusChange}

@@ -30,5 +30,5 @@ test('should handle startEditExpense', () => {
 
 test('should handle remove expense', () => {
     wrapper.find('button').simulate('click');
-    expect(startRemoveExpense).toHaveBeenCalledWith(expenses[0].id);
+    expect(wrapper.state('isModalOpen')).toBeTruthy();
 });

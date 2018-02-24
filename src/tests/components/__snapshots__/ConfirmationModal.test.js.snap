@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should display ConfirmationModal correctly 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={200}
+  contentLabel="Testing Modal"
+  isOpen={true}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <h3
+    className="modal__title"
+  >
+    Testing Modal
+  </h3>
+  <p
+    className="modal__body"
+  >
+    This is a test
+  </p>
+  <div
+    className="modal__actions"
+  >
+    <button
+      className="button button-yes"
+      onClick={[MockFunction]}
+    >
+      Yes
+    </button>
+    <button
+      className="button button-no button--secondary"
+      onClick={[MockFunction]}
+    >
+      No
+    </button>
+  </div>
+</Modal>
+`;

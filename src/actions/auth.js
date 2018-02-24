@@ -1,10 +1,26 @@
-import { firebase, googleAuthProvider } from '../firebase/firebase'
+import { firebase, googleAuthProvider, twitterAuthProvider, githubAuthProvider, AUTH_PROVIDERS } from '../firebase/firebase'
 
 export const login = (uid) => ({ type: 'LOGIN', uid })
 
-export const startLogin = () => {
+export const startLogin = (authProvider) => {
     return () => {
-        return firebase.auth().signInWithPopup(googleAuthProvider);
+
+        let provider;
+        switch (authProvider) {
+            case AUTH_PROVIDERS.GOOGLE:
+                provider = googleAuthProvider;
+                break;
+            case AUTH_PROVIDERS.GITHUB:
+                provider = githubAuthProvider;
+                break;
+            case AUTH_PROVIDERS.TWITTER:
+                provider = twitterAuthProvider;
+                break;
+            default:
+                provider = googleAuthProvider;
+        }
+
+        return firebase.auth().signInWithPopup(provider);
     }
 }
 

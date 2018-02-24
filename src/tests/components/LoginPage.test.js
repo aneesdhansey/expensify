@@ -14,7 +14,7 @@ test('should render LoginPage correctly', () => {
 });
 
 test('should call startLogin on button click', () => {
-    wrapper.find('button').simulate('click');
+    wrapper.find('button.button--google').simulate('click');
 
     expect(startLogin).toHaveBeenCalled();
 });

@@ -16,10 +16,31 @@ exports[`should render LoginPage correctly 1`] = `
       It's time to get your expenses under control
     </p>
     <button
-      className="button"
-      onClick={[MockFunction]}
+      className="button button--google"
+      onClick={[Function]}
     >
-      Login with Google
+      <FontAwesome
+        name="google"
+      />
+       Login with Google
+    </button>
+    <button
+      className="button button--twitter"
+      onClick={[Function]}
+    >
+      <FontAwesome
+        name="twitter"
+      />
+       Login with Twitter
+    </button>
+    <button
+      className="button button--github"
+      onClick={[Function]}
+    >
+      <FontAwesome
+        name="github"
+      />
+       Login with GitHub
     </button>
   </div>
 </div>

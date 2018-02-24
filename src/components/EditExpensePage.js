@@ -4,8 +4,13 @@ import { connect } from 'react-redux'
 import { startEditExpense, startRemoveExpense } from '../actions/expenses'
 
 import ExpenseForm from './ExpenseForm'
+import ConfirmationModal from './ConfirmationModal'
 
 export class EditExpensePage extends Component {
+
+  state = {
+    isModalOpen: false
+  };
 
   onSubmit = (id, expense) => {
     this.props.startEditExpense(id, expense);
@@ -30,11 +35,18 @@ export class EditExpensePage extends Component {
             expense={this.props.expense}
             onSubmit={(expense) => this.onSubmit(this.props.expense.id, expense)} />
           <button className="button button--secondary"
-                  onClick={() => this.onRemove(this.props.expense.id)}>
+            onClick={() => this.setState(() => ({ isModalOpen: true }))}>
             Remove Expense
           </button>
         </div>
-        <br/>
+        <br />
+        <ConfirmationModal
+          isOpen={this.state.isModalOpen}
+          modalTitle="Confirm"
+          modalBody="Are you sure you want to remove this expense?"
+          handleYes={() => this.onRemove(this.props.expense.id)}
+          handleNo={() => this.setState(() => ({ isModalOpen: false }))}
+        />
       </div>
     )
   }

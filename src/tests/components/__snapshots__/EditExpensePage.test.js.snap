@@ -38,5 +38,12 @@ exports[`should render EditExpensePage correctly 1`] = `
     </button>
   </div>
   <br />
+  <ConfirmationModal
+    handleNo={[Function]}
+    handleYes={[Function]}
+    isOpen={false}
+    modalBody="Are you sure you want to remove this expense?"
+    modalTitle="Confirm"
+  />
 </div>
 `;
